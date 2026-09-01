@@ -1,0 +1,3493 @@
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM503:23 ✅ 10 itens encontrados na página atual:
+VM503:24 (index)nometipo(index)nometipo0'Como melhorar a umidade do ar em casa?''DICA'1'Quantos dias descansar antes de treinar o mesmo músculo?''DICA'2'Baba Ghanoush Cremoso''DICA'3'Muçarela e ovo podem ser equivalentes?''DICA'4'Como proteger os olhos das telas''DICA'5'Peixe ao Molho de Tomate e Ervas''DICA'6'Café, cafeína ou pré-treino?''DICA'7'Qual horário do dia devo tomar creatina?''DICA'8'Homus Cremoso e Saudável''DICA'9'Como preservar as articulações durante o exercício?''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM508:23 ✅ 10 itens encontrados na página atual:
+VM508:24 (index)nometipo(index)nometipo0'O melhor momento para fazer cardio''DICA'1'Pudim de Chia com Frutas Vermelhas''DICA'2'Frutas ajudam na absorção de ferro''DICA'3'A lavagem nasal pode ajudar a melhorar a respiração e o bem-estar''DICA'4'Tilápia Assada com Crosta Crocante de Ervas''DICA'5'Evitar telas antes de dormir pode favorecer uma noite de sono melhor''DICA'6'Lavar o frango antes de cozinhar pode aumentar o risco de contaminação''DICA'7'Cajuzinho Saudável com Pasta de Amendoim e Cacau''DICA'8'Qual é o melhor aquecimento para a musculação?''DICA'9'Escolher um bom whey protein vai além do sabor''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM514:23 ✅ 10 itens encontrados na página atual:
+VM514:24 (index)nometipo(index)nometipo0'Macarrão Instantâneo Saudável''DICA'1'Higienizar as folhas corretamente ajuda a prevenir doenças''DICA'2'O travesseiro certo pode melhorar a qualidade do seu sono''DICA'3'Nhoque Fit de Ricota''DICA'4'Dor de cabeça no trabalho: o computador pode ser um dos motivos''DICA'5'Canjica fit''DICA'6'Está sentindo dor na lombar?''DICA'7'Respire antes de reagir''DICA'8'Suco anti-inchaço''DICA'9'Sono bom também é hábito saudável''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM519:23 ✅ 9 itens encontrados na página atual:
+VM519:24 (index)nometipo(index)nometipo0'Refeições equilibradas ajudam na imunidade''DICA'1'Suplementação: quando pode ajudar de verdade''DICA'2'Sopa de abóbora e cenoura light''DICA'3'Festa junina combina com equilíbrio''DICA'4'Evolua na corrida com inteligência''DICA'5'Cuidado com a fome emocional no frio''DICA'6'SALADA CROCANTE COM MOLHO DE IOGURTE''DICA'7'Postura no trabalho: pequenos ajustes, grandes diferenças''DICA'8'DOCINHO FIT GELADO DE COCO COM CHOCOLATE''DICA'Array(9)
+(9) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+grande.jpg:1  GET https://d3l0mm8v66lpn7.cloudfront.net/53207/conversions/grande.jpg 403 (Forbidden)
+Image
+setProperty @ main.8f077228e4435083.js:1
+As @ main.8f077228e4435083.js:1
+ag @ main.8f077228e4435083.js:1
+E_ @ main.8f077228e4435083.js:1
+C @ main.8f077228e4435083.js:1
+r1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+YE @ main.8f077228e4435083.js:1
+y1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+YE @ main.8f077228e4435083.js:1
+y1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+YE @ main.8f077228e4435083.js:1
+y1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+YE @ main.8f077228e4435083.js:1
+y1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+YE @ main.8f077228e4435083.js:1
+y1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+WE @ main.8f077228e4435083.js:1
+Nf @ main.8f077228e4435083.js:1
+detectChangesInView @ main.8f077228e4435083.js:1
+detectChangesInAttachedViews @ main.8f077228e4435083.js:1
+tick @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+invoke @ polyfills.b9def886dbcbc9ad.js:1
+onInvoke @ main.8f077228e4435083.js:1
+invoke @ polyfills.b9def886dbcbc9ad.js:1
+run @ polyfills.b9def886dbcbc9ad.js:1
+run @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+_next @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+d @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+emit @ main.8f077228e4435083.js:1
+Rh @ main.8f077228e4435083.js:1
+M1 @ main.8f077228e4435083.js:1
+onInvokeTask @ main.8f077228e4435083.js:1
+invokeTask @ polyfills.b9def886dbcbc9ad.js:1
+runTask @ polyfills.b9def886dbcbc9ad.js:1
+invokeTask @ polyfills.b9def886dbcbc9ad.js:1
+j @ polyfills.b9def886dbcbc9ad.js:1
+x @ polyfills.b9def886dbcbc9ad.js:1
+X @ polyfills.b9def886dbcbc9ad.js:1
+XMLHttpRequest.send
+v @ polyfills.b9def886dbcbc9ad.js:1
+scheduleTask @ polyfills.b9def886dbcbc9ad.js:1
+onScheduleTask @ polyfills.b9def886dbcbc9ad.js:1
+scheduleTask @ polyfills.b9def886dbcbc9ad.js:1
+scheduleTask @ polyfills.b9def886dbcbc9ad.js:1
+scheduleMacroTask @ polyfills.b9def886dbcbc9ad.js:1
+xe @ polyfills.b9def886dbcbc9ad.js:1
+(anonymous) @ polyfills.b9def886dbcbc9ad.js:1
+n.<computed> @ polyfills.b9def886dbcbc9ad.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+_trySubscribe @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+d @ main.8f077228e4435083.js:1
+subscribe @ main.8f077228e4435083.js:1
+c.subscribe.v @ main.8f077228e4435083.js:1
+_next @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+_trySubscribe @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+d @ main.8f077228e4435083.js:1
+subscribe @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+d @ main.8f077228e4435083.js:1
+subscribe @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+d @ main.8f077228e4435083.js:1
+subscribe @ main.8f077228e4435083.js:1
+G @ main.8f077228e4435083.js:1
+w @ main.8f077228e4435083.js:1
+_next @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+invoke @ polyfills.b9def886dbcbc9ad.js:1
+onInvoke @ main.8f077228e4435083.js:1
+invoke @ polyfills.b9def886dbcbc9ad.js:1
+run @ polyfills.b9def886dbcbc9ad.js:1
+(anonymous) @ polyfills.b9def886dbcbc9ad.js:1
+invokeTask @ polyfills.b9def886dbcbc9ad.js:1
+onInvokeTask @ main.8f077228e4435083.js:1
+invokeTask @ polyfills.b9def886dbcbc9ad.js:1
+runTask @ polyfills.b9def886dbcbc9ad.js:1
+Y @ polyfills.b9def886dbcbc9ad.js:1
+invokeTask @ polyfills.b9def886dbcbc9ad.js:1
+j @ polyfills.b9def886dbcbc9ad.js:1
+x @ polyfills.b9def886dbcbc9ad.js:1
+X @ polyfills.b9def886dbcbc9ad.js:1
+grande.jpg:1  GET https://d3l0mm8v66lpn7.cloudfront.net/53205/conversions/grande.jpg 403 (Forbidden)
+Image
+setProperty @ main.8f077228e4435083.js:1
+As @ main.8f077228e4435083.js:1
+ag @ main.8f077228e4435083.js:1
+E_ @ main.8f077228e4435083.js:1
+C @ main.8f077228e4435083.js:1
+r1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+YE @ main.8f077228e4435083.js:1
+y1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+YE @ main.8f077228e4435083.js:1
+y1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+YE @ main.8f077228e4435083.js:1
+y1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+YE @ main.8f077228e4435083.js:1
+y1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+v1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+b1 @ main.8f077228e4435083.js:1
+YE @ main.8f077228e4435083.js:1
+y1 @ main.8f077228e4435083.js:1
+HE @ main.8f077228e4435083.js:1
+Ah @ main.8f077228e4435083.js:1
+WE @ main.8f077228e4435083.js:1
+Nf @ main.8f077228e4435083.js:1
+detectChangesInView @ main.8f077228e4435083.js:1
+detectChangesInAttachedViews @ main.8f077228e4435083.js:1
+tick @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+invoke @ polyfills.b9def886dbcbc9ad.js:1
+onInvoke @ main.8f077228e4435083.js:1
+invoke @ polyfills.b9def886dbcbc9ad.js:1
+run @ polyfills.b9def886dbcbc9ad.js:1
+run @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+_next @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+d @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+emit @ main.8f077228e4435083.js:1
+Rh @ main.8f077228e4435083.js:1
+M1 @ main.8f077228e4435083.js:1
+onInvokeTask @ main.8f077228e4435083.js:1
+invokeTask @ polyfills.b9def886dbcbc9ad.js:1
+runTask @ polyfills.b9def886dbcbc9ad.js:1
+invokeTask @ polyfills.b9def886dbcbc9ad.js:1
+j @ polyfills.b9def886dbcbc9ad.js:1
+x @ polyfills.b9def886dbcbc9ad.js:1
+X @ polyfills.b9def886dbcbc9ad.js:1
+XMLHttpRequest.send
+v @ polyfills.b9def886dbcbc9ad.js:1
+scheduleTask @ polyfills.b9def886dbcbc9ad.js:1
+onScheduleTask @ polyfills.b9def886dbcbc9ad.js:1
+scheduleTask @ polyfills.b9def886dbcbc9ad.js:1
+scheduleTask @ polyfills.b9def886dbcbc9ad.js:1
+scheduleMacroTask @ polyfills.b9def886dbcbc9ad.js:1
+xe @ polyfills.b9def886dbcbc9ad.js:1
+(anonymous) @ polyfills.b9def886dbcbc9ad.js:1
+n.<computed> @ polyfills.b9def886dbcbc9ad.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+_trySubscribe @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+d @ main.8f077228e4435083.js:1
+subscribe @ main.8f077228e4435083.js:1
+c.subscribe.v @ main.8f077228e4435083.js:1
+_next @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+_trySubscribe @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+d @ main.8f077228e4435083.js:1
+subscribe @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+d @ main.8f077228e4435083.js:1
+subscribe @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+d @ main.8f077228e4435083.js:1
+subscribe @ main.8f077228e4435083.js:1
+G @ main.8f077228e4435083.js:1
+w @ main.8f077228e4435083.js:1
+_next @ main.8f077228e4435083.js:1
+next @ main.8f077228e4435083.js:1
+(anonymous) @ main.8f077228e4435083.js:1
+invoke @ polyfills.b9def886dbcbc9ad.js:1
+onInvoke @ main.8f077228e4435083.js:1
+invoke @ polyfills.b9def886dbcbc9ad.js:1
+run @ polyfills.b9def886dbcbc9ad.js:1
+(anonymous) @ polyfills.b9def886dbcbc9ad.js:1
+invokeTask @ polyfills.b9def886dbcbc9ad.js:1
+onInvokeTask @ main.8f077228e4435083.js:1
+invokeTask @ polyfills.b9def886dbcbc9ad.js:1
+runTask @ polyfills.b9def886dbcbc9ad.js:1
+Y @ polyfills.b9def886dbcbc9ad.js:1
+invokeTask @ polyfills.b9def886dbcbc9ad.js:1
+j @ polyfills.b9def886dbcbc9ad.js:1
+x @ polyfills.b9def886dbcbc9ad.js:1
+X @ polyfills.b9def886dbcbc9ad.js:1
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM524:23 ✅ 9 itens encontrados na página atual:
+VM524:24 (index)nometipo(index)nometipo0'Recuperação após treinos e provas: parte essencial do resultado''DICA'1'Minipanquecas Saudáveis''DICA'2'Reeducação alimentar: começar pelo básico funciona''DICA'3'Procrastinação: entender o motivo é o primeiro passo''DICA'4'Salada Caesar''DICA'5'Constância nos treinos: o segredo que muita gente ignora''DICA'6'Comer salada sem sofrimento é possível!''DICA'7'Banana Grelhada''DICA'8'Regularidade nos treinos: o que realmente traz resultado''DICA'Array(9)
+(9) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM530:23 ✅ 10 itens encontrados na página atual:
+VM530:24 (index)nometipo(index)nometipo0'Beber mais água: um hábito simples que faz diferença''DICA'1'Salmão Grelhado''DICA'2'Postura no dia a dia: o que você faz sem perceber pode causar dor''DICA'3'Pequenas pausas evitam grandes dores no dia a dia''DICA'4'Sedentarismo silencioso também gera dor!''DICA'5'Má execução, excesso de carga e falta de recuperação causam dor!''DICA'6'Chá funcional de gengibre com limão e mel''DICA'7'Sentir dor ao se exercitar não é normal e ignorar pode gerar lesões!''DICA'8'Sanduíche quente integral de queijo e tomate''DICA'9'O sódio escondido pode estar sabotando sua saúde!''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM535:23 ✅ 8 itens encontrados na página atual:
+VM535:24 (index)nometipo(index)nometipo0'Açúcar em excesso desregula energia, humor e saúde metabólica!''DICA'1'Sopa cremosa de abóbora com frango desfiado''DICA'2'Excesso de ultra processados não afeta só o peso: afeta o corpo inteiro!''DICA'3'Movimento diário é sobre funcionalidade, não performance!''DICA'4'Mingau de aveia proteico com maçã e canela''DICA'5'Comer com atenção melhora digestão, energia e até o humor!''DICA'6'Vitamina de morango com iogurte''DICA'7'Omelete simples com legumes''DICA'Array(8)
+(8) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM541:23 ✅ 10 itens encontrados na página atual:
+VM541:24 (index)nometipo(index)nometipo0'Pausas não são luxo: são uma necessidade biológica!''DICA'1'Comer com atenção melhora digestão, energia e até o humor!''DICA'2'Smoothie verde refrescante''DICA'3'Iogurte com frutas e granola''DICA'4'Shake de cacau''DICA'5'Sanduíche natural de frango''DICA'6'Vitamina proteica de banana''DICA'7'Panqueca de banana e aveia''DICA'8'Suco de Laranja com Cenoura''DICA'9'Como Comer Salada Sem Sofrimento: Dicas para Tornar o Hábito Mais Prazeroso''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM547:23 ✅ 10 itens encontrados na página atual:
+VM547:24 (index)nometipo(index)nometipo0'Água Aromatizada de Limão, Pepino e Hortelã''DICA'1'Como Beber Mais Água no Dia a Dia: Dicas Simples e Práticas''DICA'2'Cuidados com a Saúde na Virada de Ano: Como Aproveitar as Festas sem Exageros''DICA'3'Saladas de Frutas Refrescantes para o Verão''DICA'4'Calor Excessivo e Exposição ao Sol: Cuidados Essenciais para Evitar Mal-Estar no Verão''DICA'5'Sucos Refrescantes para o Verão''DICA'6'Rosquinhas de Polvilho com Chia''DICA'7'Alimentação consciente: comendo com atenção plena 🍽️''DICA'8'Hambúrguer com Rap 10''DICA'9'Técnicas simples de respiração para aliviar a ansiedade''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM553:23 ✅ 10 itens encontrados na página atual:
+VM553:24 (index)nometipo(index)nometipo0'Receita: Sopa de Tomate''DICA'1'O impacto do sono na recuperação muscular 😴''DICA'2'Como evitar lesões comuns em corredores 🏃\u200D♂️''DICA'3'Pastel Sem Glúten''DICA'4'Sanduíche de Abobrinha''DICA'5'Suplementos que auxiliam na recuperação muscular 💪''DICA'6'Salada de Cenoura Cremosa''DICA'7'Sopa de Ervilha com Frango''DICA'8'Como o movimento influencia o humor''DICA'9'Treinar em jejum: quando faz sentido e quando evitar''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM559:23 ✅ 10 itens encontrados na página atual:
+VM559:24 (index)nometipo(index)nometipo0'Por que a postura influencia seus resultados nos treinos''DICA'1'Salada de Couve com Laranja''DICA'2'Como pequenas mudanças de hábito fazem diferença no longo prazo''DICA'3'Tilápia Grelhada com Creme de Espinafre''DICA'4'Salada Caesar''DICA'5'O papel da cafeína no desempenho físico e mental''DICA'6'Vitaminas e minerais que ajudam na energia diária''DICA'7'Suco Detox de Couve e Abacaxi''DICA'8'Estratégias para lidar com a procrastinação''DICA'9'Conscientização sobre o Diabetes: hábitos simples que fazem diferença''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM564:23 ✅ 10 itens encontrados na página atual:
+VM564:24 (index)nometipo(index)nometipo0'Pão de Queijo Vegano''DICA'1'Salada de Abacate com Milho''DICA'2'Dicas para recuperar o corpo após provas e treinos longos''DICA'3'Esfiha de Queijo''DICA'4'Muffins de Brócolis e Queijo''DICA'5'Reeducação alimentar: por onde começar 🥗''DICA'6'Benefícios da meditação para foco e clareza mental 🧘\u200D♀️''DICA'7'Bolinho de Chuva Saudável''DICA'8'Minipanquecas Saudáveis''DICA'9'Como adaptar os treinos nos dias de cansaço físico 💤''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM569:23 ✅ 10 itens encontrados na página atual:
+VM569:24 (index)nometipo(index)nometipo0'Salada Caprese com Pesto''DICA'1'Treinar ao ar livre: benefícios para corpo e mente 🌳''DICA'2'Patê de Atum''DICA'3'O impacto da hidratação na performance 💧''DICA'4'Danoninho Saudável''DICA'5'Como equilibrar carboidratos, proteínas e gorduras 🥗''DICA'6'Salpicão Saudável''DICA'7'Como pequenas pausas reduzem o estresse diário 🧘\u200D♀️''DICA'8'Pão de Mel Saudável''DICA'9'A importância da constância nos treinos 💪''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM574:23 ✅ 10 itens encontrados na página atual:
+VM574:24 (index)nometipo(index)nometipo0'Novembro Azul: informação também é cuidado! 💙''DICA'1'Salada de Chuchu Fácil''DICA'2'Pequenas mudanças de hábito que fazem diferença no longo prazo 🌱''DICA'3'Picolé de Frutas Vermelhas''DICA'4'Como evitar lesões comuns em corredores 🏃\u200D♂️''DICA'5'Chá Detox Diurético''DICA'6'Estratégias para se manter ativo e se alimentar bem durante viagens ✈️''DICA'7'Muffin de Abobrinha Proteico e Sem Glúten''DICA'8'Vitaminas e minerais essenciais para energia no dia a dia 💊''DICA'9'Crepioca de Chocolate''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM579:23 ✅ 10 itens encontrados na página atual:
+VM579:24 (index)nometipo(index)nometipo0'Dicas para montar marmitas equilibradas 🥗''DICA'1'Geleia de Morango''DICA'2'Farofa de Berinjela''DICA'3'A importância do descanso para evolução nos treinos''DICA'4'Dicas para melhorar a postura no trabalho 🪑''DICA'5'Banana Grelhada''DICA'6'Panqueca de Banana Fit''DICA'7'A importância de procurar orientação antes de suplementar 💊''DICA'8'Como reduzir o consumo de açúcar no dia a dia 🍫''DICA'9'Escondidinho Fit de Carne Moída e Couve-flor''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM585:23 ✅ 10 itens encontrados na página atual:
+VM585:24 (index)nometipo(index)nometipo0'Bolo integral de Banana''DICA'1'Correr na rua ou na esteira: qual escolher? 🏃''DICA'2'Como celebrar pequenas conquistas aumenta a motivação 🎉''DICA'3'Chocolate Quente Fit''DICA'4'Bolo de Laranja Sem Glúten''DICA'5'BCAA: quando pode ser útil? 💪''DICA'6'O papel da fibra alimentar na saciedade 🥗''DICA'7'Salada de Tabule''DICA'8'Torta Integral de Atum''DICA'9'Como manter a regularidade nos treinos, mesmo nos dias de preguiça 💪''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM591:23 ✅ 10 itens encontrados na página atual:
+VM591:24 (index)nometipo(index)nometipo0'A importância de manter exames em dia 🩺''DICA'1'Mix de Legumes na Air Fryer''DICA'2'Mousse de Maracujá Light''DICA'3'O que é a cafeína e como ela afeta o rendimento ☕⚡''DICA'4'Como equilibrar carboidratos, proteínas e gorduras no dia a dia 🥗''DICA'5'Salmão Grelhado''DICA'6'Bolo de Chocolate Low Carb''DICA'7'Benefícios de treinar força para quem corre 💪''DICA'8'A importância de dormir bem para emagrecimento e desempenho 😴''DICA'9'Hambúrguer Vegetariano de Lentilha''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM596:23 ✅ 10 itens encontrados na página atual:
+VM596:24 (index)nometipo(index)nometipo0'Suplementos que auxiliam na recuperação muscular 💪''DICA'1'Bolo de Caneca Fit''DICA'2'A importância de um café da manhã nutritivo 🥣''DICA'3'Suco Detox de Limão e Laranja''DICA'4'Como a respiração influencia no desempenho durante os treinos 💨''DICA'5'Torta de Espinafre Fit''DICA'6'Como pequenas pausas no dia reduzem o estresse 🌿''DICA'7'Suflê de 4 Legumes no Liquidificador''DICA'8'Creatina: para que serve e quem pode usar? ⚡''DICA'9'Manjar de Coco Light''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM601:23 ✅ 10 itens encontrados na página atual:
+VM601:24 (index)nometipo(index)nometipo0'O papel da hidratação no desempenho físico e mental 💧''DICA'1'Torta de Frango Low Carb''DICA'2'Chips de Abobrinha no Forno''DICA'3'Dica: A importância do aquecimento antes da corrida 🏃\u200D♂️''DICA'4'Torta de Maçã Crocante Fit''DICA'5'Outubro Rosa: um lembrete de cuidado e prevenção 🎀''DICA'6'Fortalecimento de glúteos para prevenir dores nas costas 🍑''DICA'7'Bolinhas de leite em pó saudável''DICA'8'Proteínas vegetais: opções e combinações para completar o prato 🌱''DICA'9'Smoothie Verde Detox''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM607:23 ✅ 10 itens encontrados na página atual:
+VM607:24 (index)nometipo(index)nometipo0'Chás calmantes que ajudam a desacelerar antes de dormir 🍵''DICA'1'Vinagrete Saudável''DICA'2'Postura na mesa de trabalho: ajustes simples para evitar dores 💺''DICA'3'Mingau de Aveia com Frutas Vermelhas''DICA'4'Jejum intermitente: cuidados e para quem é indicado ⏳''DICA'5'Caldo de Feijão Branco''DICA'6'Treinar à noite: mitos e verdades sobre desempenho e sono 🌙''DICA'7'Ceviche Vegano com Palmito''DICA'8'Ferro — importância para energia e desempenho físico 🩸''DICA'9'Brigadeiro Saudável''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM612:23 ✅ 10 itens encontrados na página atual:
+VM612:24 (index)nometipo(index)nometipo0'Como evitar bolhas e desconfortos durante a corrida 🏃\u200D♀️''DICA'1'Mandioca na Air Fryer''DICA'2'Snacks práticos e saudáveis para viagens ou dias corridos 🥜''DICA'3'Suco de Abacaxi e Manga''DICA'4'Como uma rotina curta de yoga pode mudar a disposição 🧘\u200D♀️''DICA'5'Bolinho de arroz assado''DICA'6'Fortalecimento de panturrilhas para melhorar corrida e caminhada 🦵''DICA'7'Feijoada Light''DICA'8'Como aproveitar melhor os nutrientes com combinações certas de alimentos 🥗''DICA'9'Bolo de Banana com Aveia e Óleo de Coco''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM618:23 ✅ 10 itens encontrados na página atual:
+VM618:24 (index)nometipo(index)nometipo0'Treinar subida: benefícios para força e resistência 🏃\u200D♂️''DICA'1'Camarão ao Leite de Coco''DICA'2'Alongamento para abrir o peito e melhorar a respiração 🫁''DICA'3'Salada Tropical com Molho de Laranja''DICA'4'Benefícios de incluir sementes na rotina alimentar 🌱''DICA'5'Pudim de Chia''DICA'6'Magnésio — aliado da contração muscular e do sono 🌙''DICA'7'Creme de Abóbora Assada com Gengibre''DICA'8'O impacto da natureza no bem-estar mental 🌳''DICA'9'Moqueca Capixaba Leve''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM623:23 ✅ 10 itens encontrados na página atual:
+VM623:24 (index)nometipo(index)nometipo0'Colágeno — quando vale a pena considerar a suplementação 💊''DICA'1'Caldo Verde Low Carb''DICA'2'Postura da criança: relaxamento e alívio para a lombar 🧘\u200D♀️''DICA'3'Galinhada de Frango com Legumes''DICA'4'Temperos naturais que dão sabor e fazem bem à saúde 🌿''DICA'5'Moqueca Vegana de Palmito''DICA'6'Exercícios unilaterais para corrigir desequilíbrios musculares 💪''DICA'7'Salada de Agrião e Abóbora''DICA'8'Corrida intervalada: como alternar ritmos pode melhorar seu desempenho 🏃\u200D♂️''DICA'9'Panqueca com Massa de Abóbora''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM629:23 ✅ 10 itens encontrados na página atual:
+VM629:24 (index)nometipo(index)nometipo0'5 minutos de respiração consciente para acalmar a mente 🌿''DICA'1'Maionese Saudável''DICA'2'Café da manhã equilibrado: combustível para o seu dia ☀️''DICA'3'Bolinho de Aveia e Cacau''DICA'4'Treinar em grupo pode motivar mais do que você imagina 🤝''DICA'5'Suco Verde com Abacaxi''DICA'6'A importância de pedir ajuda e falar sobre o que sente 💬''DICA'7'Muffin de Queijo Saudável''DICA'8'Bolo Mousse de Maracujá''DICA'9'Suplementos termogênicos: cuidado com promessas milagrosas ⚠️''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM634:23 ✅ 10 itens encontrados na página atual:
+VM634:24 (index)nometipo(index)nometipo0'Torta de Abobrinha com Tomate Seco''DICA'1'Alongamento e mobilidade: essenciais para prevenir dores e lesões 🧘\u200D♂️''DICA'2'Nugget Saudável''DICA'3'Correr melhora o humor graças à endorfina 🏃\u200D♂️''DICA'4'Bolo de Abóbora''DICA'5'Lanches saudáveis não precisam ser sem graça 🍎''DICA'6'Bolinho de Brócolis Saudável''DICA'7'O corpo aprende com a repetição — persista! 📝''DICA'8'Pudim sem Leite Condensado''DICA'9'Creatina: o que é, para que serve e quem pode usar ⚡''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM640:23 ✅ 10 itens encontrados na página atual:
+VM640:24 (index)nometipo(index)nometipo0'Croquete de Frango''DICA'1'Descanso também faz parte do plano de corrida 🏃\u200D♂️''DICA'2'Pipoca Doce Saudável''DICA'3'Respirar fundo é gratuito, simples e poderoso 🌬️''DICA'4'Pão Saudável''DICA'5'Comece o dia com um café da manhã de verdade 🌅''DICA'6'Mousse de Manga''DICA'7'Regularidade é mais importante do que intensidade 📅''DICA'8'Pão de Tâmaras''DICA'9'Suplementar sem avaliação? Melhor não! 💊''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM646:23 ✅ 10 itens encontrados na página atual:
+VM646:24 (index)nometipo(index)nometipo0'Torta de Limão Saudável no Pote''DICA'1'Treino leve também é treino 🏃\u200D♂️''DICA'2'Panqueca de Cogumelo''DICA'3'Dê valor ao hoje: presente é o tempo mais importante ⏳''DICA'4'Quiche Caprese Saudável''DICA'5'Comer colorido é uma forma simples de garantir nutrientes variados 🥗''DICA'6'Bolo de Limão na Airfryer''DICA'7'Fortalecer o core melhora postura e equilíbrio 💪''DICA'8'Couve-flor à Parmegiana''DICA'9'Cafeína como pré-treino: benefícios e cuidados ☕''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM652:23 ✅ 10 itens encontrados na página atual:
+VM652:24 (index)nometipo(index)nometipo0'Hidrate-se antes, durante e depois da corrida 💧''DICA'1'Bolo Mármore Saudável''DICA'2'Falar sobre o que sente não é fraqueza — é autocuidado 🧠''DICA'3'Pizza Saudável''DICA'4'Comer bem não é comer muito, é comer com qualidade 🍽️''DICA'5'Pão com Ovo Mexido e Cogumelos''DICA'6'Um treino curto é melhor que nenhum 💪''DICA'7'Mingau de Tapioca sem Açúcar''DICA'8'Whey protein: quando e por que usar? 🤔''DICA'9'Suco Detox de Abacaxi''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM657:23 ✅ 10 itens encontrados na página atual:
+VM657:24 (index)nometipo(index)nometipo0'Respiração consciente durante a corrida faz diferença 🏃''DICA'1'Pasta de Amendoim Caseira''DICA'2'Avocado Toast com Ovo''DICA'3'Cuidar de si é o primeiro passo para viver melhor 💛''DICA'4'Tapioca com Queijo e Ovo''DICA'5'Panqueca de Banana Fit com Aveia''DICA'6'Pão de Queijo de Frigideira''DICA'7'Evite pular refeições: seu corpo precisa de energia constante 🌟''DICA'8'Suflê de Cenoura com Farinha de Aveia''DICA'9'Você sobreviveu ao mês – reconheça a sua força 🌟''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM662:23 ✅ 10 itens encontrados na página atual:
+VM662:24 (index)nometipo(index)nometipo0'Suco de Melancia com Gengibre''DICA'1'Seu corpo foi feito para se mover 💪''DICA'2'Bolo de Laranja sem Glúten''DICA'3'Correr mais rápido ou mais longe: o que priorizar? 🏃\u200D♂️''DICA'4'Salada de Berinjela''DICA'5'Não está com vontade de treinar? Tente só começar 💪''DICA'6'Bolo de Maçã Integral Fitness''DICA'7'Cheesecake com Goiabada Light''DICA'8'Mantenha sua garrafinha de água por perto durante o treino 💧''DICA'9'Torta Rápida de Frango''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM667:23 ✅ 10 itens encontrados na página atual:
+VM667:24 (index)nometipo(index)nometipo0'Escolha uma música que te acalma 🎶''DICA'1'Bolo Prestígio Fit''DICA'2'Corrida e sono: aliados para performance 🏃\u200D♂️''DICA'3'Wrap de Atum''DICA'4'O sono é o maior regenerador natural 🛌''DICA'5'Quiche de Alho-poró e Bacon sem Massa''DICA'6'Movimente-se de forma leve 🏃''DICA'7'Respiração consciente durante a corrida 🏃\u200D♂️''DICA'8'Espaguete de Abobrinha Cremoso''DICA'9'Pastinha de Ovo Fit''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM672:23 ✅ 10 itens encontrados na página atual:
+VM672:24 (index)nometipo(index)nometipo0'Minutos de sol no dia fazem diferença no humor ☀️''DICA'1'Brócolis Gratinado Fit''DICA'2'Sua rotina precisa de pausas, não de pressa ⏸️''DICA'3'Filé de Frango à Parmegiana Low Carb''DICA'4'Está com fome ou ansiedade? 🤔🍫''DICA'5'Sorvete de Banana Fácil''DICA'6'Evite começar o dia pelo celular 📵''DICA'7'Creme de Cenoura e Couve-flor''DICA'8'Omelete Proteica''DICA'9'5 minutos de alongamento valem ouro ⏱️''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM678:23 ✅ 10 itens encontrados na página atual:
+VM678:24 (index)nometipo(index)nometipo0'Nova semana, novos respiros 🌬️''DICA'1'Seu corpo sente o que sua mente pensa 🧠''DICA'2'Pão de Fubá de Microondas''DICA'3'Granola Caseira''DICA'4'Escondidinho de Batata Doce e Frango''DICA'5'Descansar também é produtividade 😌''DICA'6'Torta de Palmito Low Carb''DICA'7'Pizza e equilíbrio podem andar juntos 🍕''DICA'8'Minipizza Integral''DICA'9'Correr também é cuidar da mente 🏃\u200D♂️''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM684:23 ✅ 10 itens encontrados na página atual:
+VM684:24 (index)nometipo(index)nometipo0'Mousse de Maracujá sem Açúcar''DICA'1'Comer com presença evita exageros e aumenta o prazer 🍽️''DICA'2'Bolo de Limão Fit''DICA'3'Sim, o chocolate pode ter vez na sua rotina! 🍫''DICA'4'Muffin de Chocolate Fit''DICA'5'Salgado Fit''DICA'6'Como foi sua semana emocionalmente? 🧠''DICA'7'Berinjela Recheada com Frango''DICA'8'A importância da postura ao correr 🏃\u200D♂️''DICA'9'Salpicão Fit''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM689:23 ✅ 10 itens encontrados na página atual:
+VM689:24 (index)nometipo(index)nometipo0'Julho Amarelo: mês de prevenção às hepatites virais 🎗''DICA'1'Mingau de Aveia com Banana''DICA'2'O que comer antes de correr? 🍌''DICA'3'Brownie Fit de Cacau e Abóbora''DICA'4'Inclua uma cor nova no prato hoje 🍅''DICA'5'Chips de Batata Doce com Páprica''DICA'6'Torta de Tapioca Fit''DICA'7'Gratidão: saúde começa na mente 🙏''DICA'8'Brownie Fitness''DICA'9'Torta Salgada Sem Glúten''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM694:23 ✅ 10 itens encontrados na página atual:
+VM694:24 (index)nometipo(index)nometipo0'Movimente-se de forma divertida 🤸\u200D♀️''DICA'1'Pão de Microondas''DICA'2'Sabores juninos com leveza 🎉''DICA'3'Coxinha Fit''DICA'4'Faça do autocuidado uma rotina 🧘\u200D♀️''DICA'5'Tostada de Pasta de Ricota com Tomatinho Confitado''DICA'6'Hidrate-se, mesmo no frio 💧''DICA'7'Leite: um aliado dos ossos 🥛''DICA'8'Suco de Melancia com Gengibre''DICA'9'Desconecte para Descansar 🌙''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM699:23 ✅ 10 itens encontrados na página atual:
+VM699:24 (index)nometipo(index)nometipo0'Sopa de Legumes''DICA'1'Bombom de Morango Fit''DICA'2'Pipoca Funcional''DICA'3'Dia Internacional do Yoga: Equilíbrio em Movimento 🧘\u200D♀️''DICA'4'Bolo de Fubá Fit''DICA'5'Vitamina C no prato 🍊''DICA'6'Curau de Milho Verde Fit''DICA'7'Celebre a saúde com pequenos hábitos 🌟''DICA'8'Milho Assado na Air Fryer''DICA'9'Esquente o corpo com chás funcionais 🍵''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+
+VM704:23 ✅ 10 itens encontrados na página atual:
+VM704:24 (index)nometipo(index)nometipo0'Pamonha Fit''DICA'1'Movimento contra o sedentarismo 🚶\u200D♀️''DICA'2'Gelado de Abacaxi Diet''DICA'3'Durma bem, viva melhor 😴''DICA'4'Pizza de Aveia''DICA'5'Bolo de Chocolate Fit sem glúten e sem lactose''DICA'6'Alimente-se bem para doar com saúde 🩸''DICA'7'Sanduíche Natural''DICA'8'Benefícios das fibras para o intestino 🌾''DICA'9'Salada de Brócolis com Passas e Amêndoas''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM709:23 ✅ 9 itens encontrados na página atual:
+VM709:24 (index)nometipo(index)nometipo0'Benefícios do treino em dupla 💪''DICA'1'Torta de Berinjela com Atum''DICA'2'Benefícios da caminhada diária 🚶''DICA'3'Sorvete de Morango Low Carb''DICA'4'Meditação para acalmar a mente 🧘''DICA'5'Quibe “Frito” na Air Fryer''DICA'6'Escolhas inteligentes no mercado 🛒''DICA'7'Panqueca Fit de Banana''DICA'8'Bolo de Batata Doce''DICA'Array(9)
+(9) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM714:23 ✅ 10 itens encontrados na página atual:
+VM714:24 (index)nometipo(index)nometipo0'Comida segura, saúde garantida 🍽️''DICA'1'Panqueca Fit de Banana''DICA'2'Imunidade forte no inverno ❄️💪''DICA'3'Crepioca Simples''DICA'4'Postura importa: cuide da sua coluna 🧍\u200D♂️🪑''DICA'5'Suflê de Chuchu com Farinha de Aveia''DICA'6'Respiração Consciente no dia a dia 🌬️''DICA'7'Peito de Frango na Air Fryer''DICA'8'Pedale pela sua saúde! 🚲''DICA'9'Bolo de Chocolate de Caneca Low Carb''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM720:23 ✅ 10 itens encontrados na página atual:
+VM720:24 (index)nometipo(index)nometipo0'Comece o dia com alongamento 🌞''DICA'1'Pão de Frigideira Low Carb''DICA'2'Sopa de Legumes Detox''DICA'3'Mexer o corpo reduz a ansiedade 🏋️''DICA'4'Final de mês: celebre sua evolução, por menor que pareça! 🎉''DICA'5'Pizza de Tapioca''DICA'6'Pequenas pausas, grandes impactos: pare por 1 minuto e respire 🧘\u200D♀️''DICA'7'Muffin de Espinafre''DICA'8'Dia do Desafio: mexa-se, seu corpo foi feito pra isso! 💪''DICA'9'Smoothie de Iogurte com Frutas''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM726:23 ✅ 10 itens encontrados na página atual:
+VM726:24 (index)nometipo(index)nometipo0'Organizar sua rotina é um presente para sua saúde 🎁''DICA'1'Palha Italiana Fit''DICA'2'Desafie-se a sair da sua zona de conforto! 🤩''DICA'3'Legumes Assados na Pasta de Pimentão''DICA'4'Café com equilíbrio: aproveite os benefícios! ☕✨''DICA'5'Bolo de Café Fit''DICA'6'Mexer o corpo libera endorfina, bom humor e leveza 💃🕺''DICA'7'Batata Gratinada''DICA'8'Não pule refeições: seu corpo sente falta 🍽️''DICA'9'Bolinho Fit de Banana com Maçã''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM732:23 ✅ 10 itens encontrados na página atual:
+VM732:24 (index)nometipo(index)nometipo0'Meditação: 3 minutos para acalmar a mente no meio do dia 🧘\u200D♀️''DICA'1'Wrap Fit de Frango e Legumes''DICA'2'Panquecas de Beterraba Sem Glúten e Sem Lactose''DICA'3'Você está se hidratando bem hoje? 💧''DICA'4'Sorvete de Uva Proteico''DICA'5'O que você pode fazer hoje que seu “eu do futuro” vai agradecer? ⏳💚''DICA'6'Como fazer escolhas conscientes no mercado 🛒''DICA'7'Salada Waldorf''DICA'8'Como ler rótulos de alimentos: o que importa na lista de ingredientes 🧐''DICA'9'Vitamina de Frutas''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM737:23 ✅ 10 itens encontrados na página atual:
+VM737:24 (index)nometipo(index)nometipo0'Rótulos alimentares: fique de olho no sódio 🔍''DICA'1'Strogonoff Fit com Batata Doce''DICA'2'Sal e pressão alta: como cuidar da sua saúde ⚠️''DICA'3'Suco Detox de Açaí''DICA'4'Dica rápida: use ervas para dar sabor sem sal 🌿''DICA'5'Smoothie Proteico de Maracujá''DICA'6'Alimentos ultraprocessados: onde o sal se esconde 🍔''DICA'7'Sanduíche de Salmão Defumado com Brócolis''DICA'8'Por que reduzir o sal? Seu coração agradece! 🧂''DICA'9'Farofa de Amêndoas Low Carb''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM742:23 ✅ 10 itens encontrados na página atual:
+VM742:24 (index)nometipo(index)nometipo0'Creme de Batata Baroa com Ricota''DICA'1'Equilíbrio começa com escolhas pequenas e conscientes 💛''DICA'2'Bolo Integral de Cenoura e Mel''DICA'3'Pão de Queijo com Goiabada Low Carb''DICA'4'Movimento e respiração para aliviar o estresse 🧘\u200D♂️''DICA'5'Bolinho Salgado na Air Fryer''DICA'6'Autoobservação: seu corpo fala, você ouve? 🧘\u200D♀️''DICA'7'Torta de Ricota e Frango''DICA'8'Bem-estar coletivo começa com autocuidado 💚''DICA'9'Brigadeiro Saudável''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM748:23 ✅ 10 itens encontrados na página atual:
+VM748:24 (index)nometipo(index)nometipo0'Alongamento: pausa rápida que renova a energia 🧘\u200D♀️''DICA'1'Bacalhau com Legumes''DICA'2'Como se manter ativo em dias corridos 💪''DICA'3'Bem-estar no trabalho: Cuidar da saúde também é importante 💚''DICA'4'Sorvete Fit de Chocolate''DICA'5'Como regular seu relógio biológico para mais disposição ⏰''DICA'6'Como organizar suas refeições para uma rotina mais saudável 🥗''DICA'7'Benefícios do consumo de peixe 🐟''DICA'8'Como evitar o exagero na Páscoa? 🐰''DICA'9'Cookie de Aveia e Cacau''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM754:23 ✅ 10 itens encontrados na página atual:
+VM754:24 (index)nometipo(index)nometipo0'Chocolate sem Culpa! Como Escolher a Melhor Opção? 🍫''DICA'1'Brownie de Chocolate sem Açúcar''DICA'2'Ovo de Colher Saudável''DICA'3'Como não abandonar os treinos no feriado? 🏋️\u200D♂️🎉''DICA'4'Técnicas de respiração para aliviar a tensão do dia a dia''DICA'5'Lasanha de Abobrinha''DICA'6'O equilíbrio é a chave para uma alimentação saudável! ⚖️''DICA'7'Pizza de Cenoura Low Carb''DICA'8'A importância de exames regulares para cuidar do corpo 🩺''DICA'9'Brócolis Gratinado''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM766:23 ✅ 10 itens encontrados na página atual:
+VM766:24 (index)nometipo(index)nometipo0'Saúde Mental importa! Reduzindo o estresse com hábitos simples! 🧠''DICA'1'Hambúrguer de Frango Recheado''DICA'2'Como dormir melhor e evitar o cansaço constante? 😴''DICA'3'Bolo de Banana e Whey''DICA'4'Pequenas mudanças fazem toda a diferença na saúde! 💪''DICA'5'Almôndegas de Ricota com Espinafre''DICA'6'Como manter o foco no trabalho e nos estudos 📚💻''DICA'7'Pão Proteico de Castanha de Caju Low Carb''DICA'8'Cardio x Musculação: Qual o melhor para alcançar seu objetivo? 🏃\u200D♀️🏋️\u200D♂️''DICA'9'Quiche de Espinafre e Alho Poró''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM771:23 ✅ 10 itens encontrados na página atual:
+VM771:24 (index)nometipo(index)nometipo0'Benefícios das fibras na alimentação 🥦🌾''DICA'1'Arroz com Brócolis''DICA'2'Como o uso excessivo de telas pode afetar seus olhos? 📱''DICA'3'Paçoquinha Diet''DICA'4'Mitos x Verdades da Nutrição – Desvendando os boatos no Dia da Mentira! 🤥🚫''DICA'5'Berinjela à Parmegiana''DICA'6'Dicas para manter a postura correta no dia a dia 🧍\u200D♀️''DICA'7'Cookie Saudável''DICA'8'Couve-flor à Milanesa Assado''DICA'9'Técnicas de relaxamento para um dia mais leve 🧘\u200D♂️''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM776:23 ✅ 10 itens encontrados na página atual:
+VM776:24 (index)nometipo(index)nometipo0'Panqueca Fit de Whey e Cacau''DICA'1'O papel das gorduras boas na alimentação 🥜''DICA'2'Cheesecake com Goiabada Light e Sem Glúten''DICA'3'Como organizar sua alimentação semanal 🥗📅''DICA'4'Shake Proteico de Banana''DICA'5'Pequenos desafios para melhorar seu bem-estar físico e mental 💪''DICA'6'Bolo de Milho Verde Fit''DICA'7'O poder da respiração profunda para acalmar a mente 🧘\u200D♂️''DICA'8'Chips de Batata Doce''DICA'9'Precisa relaxar? A meditação pode te ajudar! 🧘\u200D♀️''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM782:23 ✅ 10 itens encontrados na página atual:
+VM782:24 (index)nometipo(index)nometipo0'Mix de Legumes na Air Fryer''DICA'1'Sinais de que seu corpo precisa de mais hidratação 💦''DICA'2'Tartare de Frutas Cítricas''DICA'3'Como a nutrição afeta sua saúde mental? 🧠''DICA'4'Picolé de Abacate Low Carb''DICA'5'Como tornar os treinos mais divertidos e motivadores''DICA'6'Mousse Fit de Chocolate''DICA'7'Você é o que você come!''DICA'8'Bolo Fit de Castanhas e Nozes''DICA'9'A diferença entre fome emocional e fome real''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM788:23 ✅ 10 itens encontrados na página atual:
+VM788:24 (index)nometipo(index)nometipo0'Nutrição Antiestresse – Alimentos para cuidar do corpo e da mente 🍫''DICA'1'Bolo de Banana de Frigideira''DICA'2'Como fazer escolhas inteligentes na hora de comer fora? 🍽️''DICA'3'Bolinho de Brócolis Assado''DICA'4'Técnicas simples para meditar e relaxar a mente 🧘\u200D♀️''DICA'5'Escondidinho de Batata Doce com Frango''DICA'6'Como manter a constância nos treinos e evitar desistir? 💪📅''DICA'7'Torta de Tapioca Salgada''DICA'8'Respiração profunda: como aliviar o estresse em 1 minuto 🧘\u200D♂️💨''DICA'9'Bolo de Laranja Sem Glúten''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM794:23 ✅ 10 itens encontrados na página atual:
+VM794:24 (index)nometipo(index)nometipo0'Como diminuir o consumo de açúcar sem sofrimento? 🍫➡️🍓''DICA'1'Torta Integral de Atum''DICA'2'O que é Burnout? ⚠️💆\u200D♂️''DICA'3'Salada Verde com Frango''DICA'4'Saúde da mulher: dicas de autocuidado 💖''DICA'5'Espaguete de Abobrinha''DICA'6'Alongamento: por que ele é essencial antes e depois dos treinos? 🤸\u200D♂️💪''DICA'7'Quibe de Abóbora''DICA'8'O que fazer quando bate a preguiça de treinar? 💤🏋️''DICA'9'Quiche Caprese Saudável''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM800:23 ✅ 10 itens encontrados na página atual:
+VM800:24 (index)nometipo(index)nometipo0'Não pule refeições! 🍽️⏳''DICA'1'Suco Detox de Melancia''DICA'2'Como evitar a desidratação nos dias de folia? 💦🎭''DICA'3'Salada Proteica de Grão de Bico''DICA'4'Como evitar o inchaço nos dias quentes? 🌞💦''DICA'5'Batata Gratinada''DICA'6'Alimentação leve para curtir o Carnaval! 🎭🥗''DICA'7'Kefir de Morango''DICA'8'Berinjela Empanada Crocante no Forno''DICA'9'Cuide-se no Carnaval e aproveite ao máximo! 🎭🎉''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM805:23 ✅ 10 itens encontrados na página atual:
+VM805:24 (index)nometipo(index)nometipo0'Lava Cake Saudável''DICA'1'Devo tomar suplementos? 🤔💊''DICA'2'Peixe na Air Fryer''DICA'3'Já ouviu falar em hipertrofia? 💪🏋️''DICA'4'Lasanha de Berinjela e Abobrinha''DICA'5'Aposte em Proteínas! 🍳🥩''DICA'6'Salada Fresh de Manga''DICA'7'Escute Música 🎶''DICA'8'Saúde no Carnaval: Durma Bem, Mesmo na Folia 💤🎭''DICA'9'Ceviche de Banana da Terra''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM811:23 ✅ 10 itens encontrados na página atual:
+VM811:24 (index)nometipo(index)nometipo0'Respire Fundo 🌿✨''DICA'1'Pão Proteico de Frango''DICA'2'Crepioca de Queijo com Tomate''DICA'3'Saúde no Carnaval: Cuidado com o Exagero! 🎭🎉''DICA'4'Já ouviu falar em Mindfulness? 🧘\u200D♂️''DICA'5'Pão de Abobrinha Fácil''DICA'6'Patê de Frango Fit Fácil''DICA'7'Momentos offline são importantes! 📵✨''DICA'8'Evite o excesso de açúcar! 🍬🚫''DICA'9'Suflê de Legumes''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM817:23 ✅ 10 itens encontrados na página atual:
+VM817:24 (index)nometipo(index)nometipo0'Saúde no verão: alimente-se bem para curtir! 🥗☀️''DICA'1'Pizza de Frigideira Fácil''DICA'2'📵 Evite o excesso de telas''DICA'3'Strogonoff de Frango Fit''DICA'4'A importância da hidratação 💧''DICA'5'Brigadeiro Fit de Pasta de Amendoim''DICA'6'Exercício sem tempo ruim! ☀️🌧️''DICA'7'Empada Fit com 5 Ingredientes''DICA'8'A importância de comer devagar! 🥗''DICA'9'Coxinha de Batata Doce Fit''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM823:23 ✅ 10 itens encontrados na página atual:
+VM823:24 (index)nometipo(index)nometipo0'Comece o dia com positividade! 🌞''DICA'1'Esfiha Aberta Fit''DICA'2'☀️ Saúde no verão: Cuide da pele!''DICA'3'Treinar 3x na semana dá resultado?''DICA'4'Shake de Avocado''DICA'5'Dê mais risadas!''DICA'6'Damascos Recheados''DICA'7'Prepare as suas próprias refeições!''DICA'8'Bolo Proteico de Caneca''DICA'9'4 dicas para a pele no verão!''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM829:23 ✅ 10 itens encontrados na página atual:
+VM829:24 (index)nometipo(index)nometipo0'Peixe na Acelga''DICA'1'10 sinais de que você está bebendo pouca água!''DICA'2'Picolé de Frutas Vermelhas''DICA'3'Atividades que ajudam no bem-estar''DICA'4'Cupcake Saudável de Laranja''DICA'5'Tá na hora de marcar uma consulta!''DICA'6'Omelete Fit''DICA'7'Caminhe!''DICA'8'Smoothie de Morango Zero Lactose''DICA'9'6 maneiras de controlar a fome''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM835:23 ✅ 10 itens encontrados na página atual:
+VM835:24 (index)nometipo(index)nometipo0'Salada de Grão de Bico Italiana''DICA'1'Sofro com instestino preso e agora?''DICA'2'Escondidinho de Batata Doce com Atum''DICA'3'5 erros ao lavar o rosto''DICA'4'Tabule''DICA'5'Dicas para aproveitar o verão!''DICA'6'Pão de Queijo Fit Fácil''DICA'7'Faça por 30 dias e sinta a revolução!''DICA'8'Sorbet de Damasco e Maracujá''DICA'9'Janeiro branco''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM841:23 ✅ 10 itens encontrados na página atual:
+VM841:24 (index)nometipo(index)nometipo0'Caponata''DICA'1'Frutas de janeiro''DICA'2'Salada Tropical''DICA'3'3 opções de café da manhã!''DICA'4'Tartar de Salmão''DICA'5'Chegou a hora de planejar as metas!''DICA'6'Mousse de Leite Fit''DICA'7'8 razões para comer mais frutas''DICA'8'Croquete Fit''DICA'9'Sugestões de pré-treino''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM847:23 ✅ 10 itens encontrados na página atual:
+VM847:24 (index)nometipo(index)nometipo0'Lombo com Abacaxi Assado''DICA'1'Natal faz bem pra saúde!''DICA'2'Pudim Fit de Leite''DICA'3'Você sabia?''DICA'4'Rabanada Fit''DICA'5'5 legumes e verduras capazes de turbinar a sua saúde''DICA'6'Salpicão Low Carb''DICA'7'5 chás para afastar o estresse e relaxar''DICA'8'Chester Saudável com Legumes''DICA'9'Quanto de água devo tomar por dia?''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM853:23 ✅ 10 itens encontrados na página atual:
+VM853:24 (index)nometipo(index)nometipo0'Pudim de Tapioca Light''DICA'1'5 dicas para aumentar a imunidade''DICA'2'Trufa Fit de Cacau''DICA'3'Planeje suas refeições''DICA'4'Salmão Grelhado com Salada de Rúcula''DICA'5'5 pilares da vida saudável''DICA'6'Suco de Coco e Kiwi (diurético)''DICA'7'Atividade física em cada fase da vida''DICA'8'Vitamina de Pêssego''DICA'9'Quatro motivos para começar a gostar de quiabo''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM859:23 ✅ 10 itens encontrados na página atual:
+VM859:24 (index)nometipo(index)nometipo0'Mousse de maracujá sem açúcar''DICA'1'12 temperos naturais para deixar a comida mais gostosa e saudável''DICA'2'Salada de avocado''DICA'3'Frutas de dezembro''DICA'4'Strogonoff de palmito vegano''DICA'5'20 alimentos que não podem ficar de fora da sua dieta''DICA'6'Farofa de proteína de soja''DICA'7'6 melhores chás para emagrecer''DICA'8'Peixe na airfryer''DICA'9'10 benefícios da banana''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM864:23 ✅ 10 itens encontrados na página atual:
+VM864:24 (index)nometipo(index)nometipo0'5 Melhores Alimentos Naturais do Mundo Para a Saúde''DICA'1'Vitamina de aveia com laranja''DICA'2'O doce perigo do consumo de açúcar''DICA'3'Bombom de banana zero açúcar''DICA'4'Os benefícios da pimenta''DICA'5'Granola caseira''DICA'6'Os 6 pilares do estilo de vida?''DICA'7'Salada de quinoa com atum e pepino''DICA'8'Pratique atividade física''DICA'9'Pizza fit de batata-doce''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM869:23 ✅ 10 itens encontrados na página atual:
+VM869:24 (index)nometipo(index)nometipo0'Quantos ovos devo comer por dia?''DICA'1'Quibe low carb de couve-flor''DICA'2'A lista do supermercado ideal''DICA'3'Frango empanado sem farinha''DICA'4'Para que serve o ferro?''DICA'5'Pão de abóbora low carb''DICA'6'Como melhorar minha saúde mental?''DICA'7'Muffins saudáveis de ovos com atum''DICA'8'Novembro Azul: 5 dicas para a prevenção do câncer de próstata''DICA'9'Iogurte Natural''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM874:23 ✅ 10 itens encontrados na página atual:
+VM874:24 (index)nometipo(index)nometipo0'Frutas de Novembro''DICA'1'Rocambole de carne com legumes''DICA'2'Reeducação alimentar: como fazer?''DICA'3'Sopa de abóbora e manjericão''DICA'4'10 benefícios da jabuticaba''DICA'5'Carne moída à moda árabe (shakshuka)''DICA'6'4 momentos para beber água''DICA'7'Batata assada crocante''DICA'8'7 benefícios do óleo de argan''DICA'9'Palitos de tomate com queijo cottage''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM880:23 ✅ 10 itens encontrados na página atual:
+VM880:24 (index)nometipo(index)nometipo0'SIM, você pode!''DICA'1'Bife de lombo de porco''DICA'2'Receita de almôndega de lentilha light''DICA'3'Cultive boas relações sociais''DICA'4'Salada mexicana''DICA'5'Banho frio ou banho quente, qual é melhor?''DICA'6'Creme de frutas vermelhas''DICA'7'Vamos substituir?''DICA'8'Arroz de couve-flor''DICA'9'Outubro Rosa - prevenção e conscientização''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM886:23 ✅ 10 itens encontrados na página atual:
+VM886:24 (index)nometipo(index)nometipo0'Sopa fria de pepino e abacate''DICA'1'Como cuidar da pele na primavera?''DICA'2'Espetinho de frutas com molho de Iogurte''DICA'3'Tipos de açúcar: saiba escolher o mais saudável''DICA'4'Receita de moqueca de banana light''DICA'5'Frutas de Outubro''DICA'6'Torta de cebola sem glúten''DICA'7'O perigo do excesso de sal na alimentação''DICA'8'Patê caseiro de cenoura e tofu''DICA'9'Pão: vilão ou não?''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM892:23 ✅ 10 itens encontrados na página atual:
+VM892:24 (index)nometipo(index)nometipo0'Bolinho de mandioca assado''DICA'1'Os benefícios do espinafre para a sua saúde''DICA'2'Biomassa de banana verde''DICA'3'alimentos bons para a pele''DICA'4'Bolo de amêndoas low carb''DICA'5'Você está dormindo bem?''DICA'6'Brigadeiro vegano sem açúcar''DICA'7'5 benefícios que só comida de verdade tem''DICA'8'Torta de limão fit - Uma Sobremesa Saudável e Refrescante''DICA'9'Os benefícios do tomate''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM898:23 ✅ 10 itens encontrados na página atual:
+VM898:24 (index)nometipo(index)nometipo0'Omelete de forno com queijo e tomate''DICA'1'4 alimentos que “roubam” sua energia.''DICA'2'Quiche de bacalhau com alho-poró low carb''DICA'3'Comer de 3 em 3 horas diminui a fome?''DICA'4'Canja de galinha low carb''DICA'5'6 razões para incluir o abacaxi na alimentação''DICA'6'Mini pizza de berinjela''DICA'7'Suco de hibisco com morango''DICA'8'O que 3 unidades de tâmara pode fazer por você?''DICA'9'Café Fit Cremoso''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM903:23 ✅ 10 itens encontrados na página atual:
+VM903:24 (index)nometipo(index)nometipo0'Salada com frango desfiado''DICA'1'6 erros de quem quer emagrecer''DICA'2'Tomate Recheado com Ovo''DICA'3'Muffin de omelete sem glúten''DICA'4'Suco de limão, laranja e alface''DICA'5'Você gosta de castanha de Caju?''DICA'6'Fondue de chocolate light''DICA'7'Empanados de abobrinha com molho de mostarda e mel''DICA'8'Estrogonofe light de carne''DICA'9'6 dicas para manter a alimentação saudável no inverno''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM908:23 ✅ 10 itens encontrados na página atual:
+VM908:24 (index)nometipo(index)nometipo0'Pão de mel integralPão de mel integral''DICA'1'Torta de maçã lowcarb de frigideira''DICA'2'Emagrecer com saúde exige paciência''DICA'3'Chocolate quente light''DICA'4'Filé ao vinho com nhoque de batata doce''DICA'5'Alimentação Saudável em 5 passos!''DICA'6'Risoto funcional de camarões, açafrão e alho-poró''DICA'7'Bolinhas de frango com cream cheese''DICA'8'5 dicas para cuidar da saúde no inverno''DICA'9'Hambúrguer funcional fácil''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM914:23 ✅ 10 itens encontrados na página atual:
+VM914:24 (index)nometipo(index)nometipo0'Filé de peito de frango com leite de coco''DICA'1'4 dicas para melhorar seu dia!''DICA'2'Rosquinha de polvilho fit''DICA'3'Salada com molho de iogurte''DICA'4'Gratinado Light de Legumes''DICA'5'ARROZ COM GENGIBRE E CURRY''DICA'6'Rir faz bem para a saúde!''DICA'7'Dica para emagrecer!''DICA'8'Espaguete de abobrinha com frango''DICA'9'Eu só penso em doces!''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM919:23 ✅ 10 itens encontrados na página atual:
+VM919:24 (index)nometipo(index)nometipo0'Brigadeiro fit com 3 ingredientes''DICA'1'POLENTA COM ESPINAFRE''DICA'2'MOLHO PESTO DE AGRIÃO''DICA'3'Maionese de abacate''DICA'4'Benefícios do gengibre''DICA'5'Bolo fit de banana caramelizada''DICA'6'Panqueca de espinafre com frango''DICA'7'Frutas ricas em vitamina C''DICA'8'Torta rápida de frango''DICA'9'Sorvete fit de banana com pasta de amendoim''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM924:23 ✅ 10 itens encontrados na página atual:
+VM924:24 (index)nometipo(index)nometipo0'Alimentos ricos em ferro!''DICA'1'Chips assado de batata-doce e alecrim''DICA'2'Brownie fit de microondas''DICA'3'Suco detox de beterraba''DICA'4'Tilápia com tomate confit e molho de castanha''DICA'5'Waffle sem ovos''DICA'6'Os benefícios do Jiló!''DICA'7'Berinjela recheada low carb''DICA'8'Guacamole fácil''DICA'9'Sopa Picante''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM930:23 ✅ 10 itens encontrados na página atual:
+VM930:24 (index)nometipo(index)nometipo0'Panqueca de aveia''DICA'1'Sopa Detox''DICA'2'Pequenos lanches ao longo do dia''DICA'3'Sopa de Inhame''DICA'4'Sopa de brócolis''DICA'5'Caminhe para viver bem!''DICA'6'Creme de couve-flor''DICA'7'Suco detox de abacaxi com gengibre''DICA'8'Creme de abóbora de inverno''DICA'9'Cookie de banana e aveia''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM936:23 ✅ 10 itens encontrados na página atual:
+VM936:24 (index)nometipo(index)nometipo0'Smoothie de mamão com mel''DICA'1'Importância da saúde bucal''DICA'2'Panqueca de banana com canela''DICA'3'Bolo de coco de frigideira''DICA'4'5 motivos para beber água!''DICA'5'Os perigos dos alimentos ultraprocessados''DICA'6'Vitamina de morango com banana''DICA'7'Pizza marguerita rápida de frigideira''DICA'8'Sopa light de gengibre e cenoura''DICA'9'10 conselhos para a saúde!''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM941:23 ✅ 10 itens encontrados na página atual:
+VM941:24 (index)nometipo(index)nometipo0'Crepes de espinafre com queijo e salmão''DICA'1'Torta nordestina fit no micro-ondas''DICA'2'Creme de Alho-poró com Farelo de Aveia''DICA'3'Frango xadrez simples''DICA'4'Ensopado de mariscos fit''DICA'5'Quiche de alho-poró''DICA'6'Tapioca é Fitness?''DICA'7'Creme de cenoura e couve-flor''DICA'8'Chá de Gengibre com Abacaxi''DICA'9'Chá Preto com Laranja e Canela''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM946:23 ✅ 10 itens encontrados na página atual:
+VM946:24 (index)nometipo(index)nometipo0'Chá Branco com Laranja, Manjericão e Cravo''DICA'1'Chá de Anis Estrelado''DICA'2'Chá Verde com Amora''DICA'3'Chá de Hibisco com Canela''DICA'4'Nhoque de Banana da Terra''DICA'5'Escondidinho de Batata Doce''DICA'6'Granola caseira''DICA'7'OMELETE DE BACON COM TOMATE''DICA'8'PASTEL DE LINHAÇA''DICA'9'BARRA DE CEREAL CASEIRA''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM951:23 ✅ 10 itens encontrados na página atual:
+VM951:24 (index)nometipo(index)nometipo0'SUCO VERDE DETOX COM CAPIM-LIMÃO''DICA'1'PIZZA DE PÃO DE QUEIJO''DICA'2'HAMBÚRGUER DE LENTILHA''DICA'3'COOKIES DE AMENDOIM SEM GLÚTEN''DICA'4'Melhore a ressaca de forma saudável!''DICA'5'PÃEZINHOS DE ABÓBORA''DICA'6'OMELETE DE CANECA DE MICROONDAS''DICA'7'BARRINHAS DE LINHAÇA''DICA'8'BOLO DE BETERRABA INTEGRAL''DICA'9'GUACAMOLE FIT''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM957:23 ✅ 10 itens encontrados na página atual:
+VM957:24 (index)nometipo(index)nometipo0'Estrogonoff light de carne''DICA'1'FRANGO CREMOSO FIT''DICA'2'10 BENEFÍCIOS DA SEMENTE DE CHIA''DICA'3'BISCOITINHO DE BANANA COM AVEIA''DICA'4'QUIABO ASSADO COM CHIMICHURRI''DICA'5'DUVIDAS RECORRENTES SOBRE FÁRMACOS PARA PERDA DE PESO''DICA'6'GOIABADA CREMOSA LIGHT''DICA'7'ALMÔNDEGAS ASSADAS''DICA'8'QUAL A IMPORTÂNCIA DOS EXERCÍCIOS?!''DICA'9'PRESTÍGIO SAUDÁVEL''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM963:23 ✅ 10 itens encontrados na página atual:
+VM963:24 (index)nometipo(index)nometipo0'SIGA OS PASSOS E REDUZA O VOLUME DA BARRIGA!''DICA'1'TORTA DE BRÓCOLIS LOW CARB''DICA'2'5 DICAS PARA DIMINUIR CELULITES!''DICA'3'TORTA DE FRANGO EXPRESS''DICA'4'PRÉ E PÓS TREINO NÃO SÃO OS MAIS IMPORTANTES!''DICA'5'CONHEÇA SOBRE A GLUTAMINA''DICA'6'MINI PIZZA DE BERINJELA''DICA'7'O QUE DEVO SABER SOBRE BCAA?''DICA'8'SUPLEMENTAR SEM ORIENTAÇÃO: CUIDADO!''DICA'9'CAFEÍNA VAI ME AJUDAR?''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM969:23 ✅ 10 itens encontrados na página atual:
+VM969:24 (index)nometipo(index)nometipo0'WHEY: CONHEÇA MELHOR SOBRE O QUERIDINHO''DICA'1'CREATINA: BENEFÍCIOS E CUIDADOS!''DICA'2'Benefício da Linhaça''DICA'3'Salmão Grelhado com Molho de Limão''DICA'4'SOPA VEGANA DE BATATA E CENOURA''DICA'5'Espaguete de abobrinha''DICA'6'Shake proteico de água de coco''DICA'7'Tortinha de frango''DICA'8'Pão de queijo de batata doce''DICA'9'Maionese caseira saudável''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM974:23 ✅ 10 itens encontrados na página atual:
+VM974:24 (index)nometipo(index)nometipo0'Overnight anabólico''DICA'1'“Arroz” de couve flor low carb''DICA'2'Smoothie de banana com frutas vermelhas:''DICA'3'Creme de abóbora de inverno''DICA'4'Coxinha do bem''DICA'5'Overnight''DICA'6'Suco verde''DICA'7'Waffle de aveia e cacau''DICA'8'Pãozinho de aveia nutritivo''DICA'9'Pãozinho de batata doce''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM979:23 ✅ 10 itens encontrados na página atual:
+VM979:24 (index)nometipo(index)nometipo0'Cookies de banana''DICA'1'Torta de morango e cacau''DICA'2'Panqueca de banana''DICA'3'Iogurte de morango proteico''DICA'4'Crepioca FIT de Banana e aveia''DICA'5'Omelete top de frango''DICA'6'Cookies de amendoim fácil''DICA'7'Bolinho de Banana com Canela''DICA'8'Achocolatado FIT''DICA'9'Cookies de amendoim com chocolate''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM984:23 ✅ 10 itens encontrados na página atual:
+VM984:24 (index)nometipo(index)nometipo0'Bolinho de queijo''DICA'1'Bolinho de frango''DICA'2'Bolinho da Letícia''DICA'3'Aveioca''DICA'4'Almôndegas assadas''DICA'5'Água com limão e própolis''DICA'6'Bolo de banana''DICA'7'"Pão" de linhaça low carb''DICA'8'Pãozinho de aveia nutritivo''DICA'9'Diferença entre IG e Carga glicêmica''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM989:23 ✅ 10 itens encontrados na página atual:
+VM989:24 (index)nometipo(index)nometipo0'Pão de grão de bico no micro-ondas''DICA'1'"Pão" de linhaça Low Carb''DICA'2'Cookies de amendoim''DICA'3'Café termogênico''DICA'4'Bolo de pasta de amendoim''DICA'5'Bolo de laranja''DICA'6'Bolo de coco de caneca''DICA'7'Bolo de chocolate com coco''DICA'8'Pão VERDADEIRAMENTE integral!''DICA'9'Quebrando Tabus: Frango com Batata Doce''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM994:23 ✅ 10 itens encontrados na página atual:
+VM994:24 (index)nometipo(index)nometipo0'QUICHE INTEGRAL DE 4 QUEIJOS''DICA'1'SALADA DETOX''DICA'2'Pudim de Leite''DICA'3'Overnight com chocolate''DICA'4'Guacamole''DICA'5'Suco roxo''DICA'6'Suco regulador intestinal''DICA'7'Suco branco''DICA'8'Suco amarelo''DICA'9'Shake de banana com cacau, amaranto e canela''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM999:23 ✅ 10 itens encontrados na página atual:
+VM999:24 (index)nometipo(index)nometipo0'Fatouche salada árabe com tomate rabanete pepino cebola e croutons de pão sírio''DICA'1'Panqueca de Banana com Pasta de Amendoim''DICA'2'Ovos mexidos com cogumelos''DICA'3'TOMATE RECHEADO''DICA'4'Pão de queijo fit fácil''DICA'5'SALADA DE GRÃO-DE-BICO''DICA'6'TORTA DE MAÇÃ CROCANTE FIT''DICA'7'QUIBE VEGETARIANO (OU VEGANO) ASSADO''DICA'8'BOLO DE BETERRABA INTEGRAL''DICA'9'BATATAS ASSADAS AGRIDOCE.''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1005:23 ✅ 10 itens encontrados na página atual:
+VM1005:24 (index)nometipo(index)nometipo0'MANJAR LIGHT DE COCO''DICA'1'HUMMUS''DICA'2'CUSCUZ''DICA'3'BOLO DE MEL''DICA'4'TORTA INTEGRAL DE ATUM''DICA'5'BOLO DE CHOCOLATE INTEGRAL''DICA'6'SALADA CAESAR''DICA'7'CHIPS DE BATATA DOCE AO FORNO''DICA'8'Pizza Low Carb – Sem Farinha e Sem Glúten''DICA'9'Falafel de forno''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1011:23 ✅ 10 itens encontrados na página atual:
+VM1011:24 (index)nometipo(index)nometipo0'Dieta rica em vegetais reduz riscos para a saúde''DICA'1'Conheça seu corpo antes de praticar exercícios físicos''DICA'2'Como vencer a procrastinação''DICA'3'Alimentos que você nunca deve comer após o treino''DICA'4'Importância da leitura e seus benefícios''DICA'5'Como não se lesionar no treino em casa?''DICA'6'Alimentos para aumentar a sua imunidade''DICA'7'Benefícios do banho gelado para sua saúde''DICA'8'PICOLÉ FIT DE FRUTAS''DICA'9'EMPADA INTEGRAL''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1016:23 ✅ 10 itens encontrados na página atual:
+VM1016:24 (index)nometipo(index)nometipo0'Dormir depois de comer causa má digestão?''DICA'1'Beber água ajuda a emagrecer?''DICA'2'Aprenda como acelerar metabolismo depois dos 40 anos''DICA'3'Melhorar a memória é possível?''DICA'4'Por que é importante manter-se hidratado em dias quentes?''DICA'5'Benefícios da atividade física''DICA'6'Por que você não deve desistir dos treinos na pandemia''DICA'7'Como evitar as estrias na musculação''DICA'8'Quanto tempo de sono é ideal para sua saúde''DICA'9'Motivos para você praticar o alongamento antes e depois das atividades''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]0: {nome: 'Dormir depois de comer causa má digestão?', tipo: 'DICA'}1: {nome: 'Beber água ajuda a emagrecer?', tipo: 'DICA'}2: {nome: 'Aprenda como acelerar metabolismo depois dos 40 anos', tipo: 'DICA'}3: {nome: 'Melhorar a memória é possível?', tipo: 'DICA'}4: {nome: 'Por que é importante manter-se hidratado em dias quentes?', tipo: 'DICA'}5: {nome: 'Benefícios da atividade física', tipo: 'DICA'}6: {nome: 'Por que você não deve desistir dos treinos na pandemia', tipo: 'DICA'}7: {nome: 'Como evitar as estrias na musculação', tipo: 'DICA'}8: {nome: 'Quanto tempo de sono é ideal para sua saúde', tipo: 'DICA'}9: {nome: 'Motivos para você praticar o alongamento antes e depois das atividades', tipo: 'DICA'}length: 10[[Prototype]]: Array(0)
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1021:23 ✅ 10 itens encontrados na página atual:
+VM1021:24 (index)nometipo(index)nometipo0'Qual é o melhor horário para treinar?''DICA'1'Conheça os benefícios do abacate''DICA'2'Adaptando atividades físicas à sua rotina''DICA'3'O que são fibras?''DICA'4'Como conseguir hipertrofia muscular''DICA'5'Alimentos energéticos''DICA'6'Como lidar com a ansiedade na quarentena''DICA'7'Técnicas para meditar''DICA'8'5 ótimas fontes de carboidratos''DICA'9'Atividades físicas que previnem doenças''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1027:23 ✅ 10 itens encontrados na página atual:
+VM1027:24 (index)nometipo(index)nometipo0'BATATA DOCE DE MICRO-ONDAS''DICA'1'ABOBRINHA ASSADA RECHEADA''DICA'2'BROWNIE DE AVEIA COM SORVETE DE BANANA''DICA'3'COMO DIMINUIR A VONTADE DE COMER DOCE''DICA'4'10 FRUTAS PARA REFRESCAR O SEU DIA''DICA'5'TOMATE RECHEADO''DICA'6'SUCO REFRESCANTE DE MELANCIA COM GENGIBRE''DICA'7'A importância do cuidado da saúde''DICA'8'O que é ter saúde?''DICA'9'Musculação feminina: dicas de alimentação''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1032:23 ✅ 10 itens encontrados na página atual:
+VM1032:24 (index)nometipo(index)nometipo0'BOLINHO DE BRÓCOLIS ASSADO''DICA'1'MELHORES ALIMENTOS PARA O PRÉ TREINO''DICA'2'PUDIM FIT DE CACAU''DICA'3'QUANTO TEMPO ANTES O PRÉ TREINO DEVE SER INGERIDO''DICA'4'HAMBÚRGUER DE GRÃO DE BICO''DICA'5'SÍNDROME DO DOMINGO À NOITE''DICA'6'QUIBE DE BERINJELA VEGANO''DICA'7'ALIMENTOS QUE ALIVIAM A TPM''DICA'8'COOKIE INTEGRAL DE AVEIA COM BANANA''DICA'9'GELADINHO FIT CREMOSO DE MORANGO''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1038:23 ✅ 10 itens encontrados na página atual:
+VM1038:24 (index)nometipo(index)nometipo0'DESCANSE PARA TER BONS RESULTADOS!''DICA'1'4 CHÁS PARA TE AJUDAR A DORMIR MELHOR''DICA'2'SORVETE DE MANGA''DICA'3'PETISCO DE GRÃO DE BICO''DICA'4'COXINHA DE BATATA DOCE''DICA'5'BRIGADEIRO DE BANANA''DICA'6'O que consumir no pós treino''DICA'7'PANQUECA DE CENOURA''DICA'8'TORTA DE ABOBRINHA''DICA'9'ALIMENTOS PARA EVITAR ANTES DO TREINO''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1043:23 ✅ 10 itens encontrados na página atual:
+VM1043:24 (index)nometipo(index)nometipo0'SUFLÊ DE FRANGO''DICA'1'CHÁ GELADO DE MAÇÃ COM GENGIBRE''DICA'2'ALIMENTOS PODEROSOS: GENGIBRE''DICA'3'COMO MELHORAR A HIDRATAÇÃO DIÁRIA''DICA'4'FAROFA DE BERINJELA''DICA'5'QUIBE DE ABÓBORA''DICA'6'ALIMENTOS QUE AJUDAM NO BRONZEADO''DICA'7'ESCONDIDINHO DE BATATA DOCE''DICA'8'BOLO DE MILHO LIGHT E SEM GLÚTEN''DICA'9'TABULE DE COUVE FLOR''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1048:23 ✅ 10 itens encontrados na página atual:
+VM1048:24 (index)nometipo(index)nometipo0'SALADA: COMO CONSERVAR AS FOLHAS''DICA'1'BEIJINHO FIT DE COLHER''DICA'2'COMO CURAR A RESSACA MAIS RÁPIDO''DICA'3'TAPIOCA SALGADA COM LINHAÇA''DICA'4'BOLO DE LIMÃO DE MICROONDAS''DICA'5'ALIMENTOS PODEROSOS: LINHAÇA''DICA'6'BENEFÍCIOS DOS ALIMENTOS VERDES''DICA'7'ESPAGUETE DE ABOBRINHA''DICA'8'5 DICAS PARA DIMINUIR AS CELULITES''DICA'9'MASSA DE PANQUECA INTEGRAL''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1053:23 ✅ 10 itens encontrados na página atual:
+VM1053:24 (index)nometipo(index)nometipo0'CAFÉ ANTES DO TREINO''DICA'1'CHIPS DE BANANA DA TERRA''DICA'2'DANONINHO CASEIRO''DICA'3'BOLINHO DE ARROZ COM LEGUMES''DICA'4'BATER OU NÃO A PAPINHA''DICA'5'PÃO DE QUEIJO COM TAPIOCA''DICA'6'ALIMENTOS QUE PROVOCAM INCHAÇO ABDOMINAL''DICA'7'LASANHA DE BERINJELA''DICA'8'PÃOZINHO DE AVEIA''DICA'9'ALIMENTOS PODEROSOS: OVOS''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1058:23 ✅ 10 itens encontrados na página atual:
+VM1058:24 (index)nometipo(index)nometipo0'REFOGADO DE LEGUMES''DICA'1'BENEFÍCIOS DA MEDITAÇÃO PARA GRÁVIDAS''DICA'2'VOCÊ SABE O QUE É TREINO DE CORE?''DICA'3'MOUSSE DE ABACATE COM CACAU''DICA'4'BISCOITO DE POLVILHO COM CHIA''DICA'5'QUICHE SEM MASSA''DICA'6'BOLO DE BATATA DOCE''DICA'7'ALIMENTOS QUE DIMINUEM O INCHAÇO ABDOMINAL''DICA'8'ESTROGONOFE LIGHT DE CARNE''DICA'9'PESSOAS QUE DEVEM MANEIRAR NO CONSUMO DE CAFEÍNA''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1064:23 ✅ 10 itens encontrados na página atual:
+VM1064:24 (index)nometipo(index)nometipo0'Sorvete Cremoso de Banana com Whey''DICA'1'Trouxinha de repolho''DICA'2'Seu intestino é travado ?''DICA'3'COLÁGENO E SUAS FUNÇÕES''DICA'4'DIFERENÇA ENTRE VERDURAS E LEGUMES''DICA'5'7 PRINCIPAIS BENEFÍCIOS DA AVEIA PARA A SAÚDE''DICA'6'COMO ESCOLHER VERDURAS E LEGUMES''DICA'7'COMO CONSERVAR VEGETAIS FOLHOSOS NA GELADEIRA''DICA'8'PANQUECA VERDE SEM FARINHA''DICA'9'MINGAU DE BANANA COM AVEIA''DICA'Array(10)
+(10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+function extrairItensPaginaAtual() {
+    // Busca os cards dentro da página ativa do Ionic
+    const containerAtivo = document.querySelector('ion-router-outlet > .ion-page:not(.ion-page-hidden)') || document;
+    const cards = containerAtivo.querySelectorAll('.btt-card-preview--content');
+
+    const titulosUnicos = new Set();
+    const itens = [];
+
+    cards.forEach(card => {
+        // Verifica se o elemento está visível e tem texto
+        const visivel = card.offsetParent !== null;
+        const texto = card.innerText.trim();
+
+        if (visivel && texto.length > 0 && !titulosUnicos.has(texto)) {
+            titulosUnicos.add(texto);
+            itens.push({
+                nome: texto,
+                tipo: 'DICA' // Alterne para 'RECEITA' se necessário
+            });
+        }
+    });
+
+    console.log(`✅ ${itens.length} itens encontrados na página atual:`);
+    console.table(itens);
+    return itens;
+}
+
+extrairItensPaginaAtual();
+VM1069:23 ✅ 6 itens encontrados na página atual:
+VM1069:24 (index)nometipo(index)nometipo0'Pudim de Chia com frutas vermelhas''DICA'1'Cansaço constante: nem sempre é só falta de sono''DICA'2'Dor muscular tardia é diferente de dor de lesão: saiba reconhecer!''DICA'3'Pausas não são luxo: são uma necessidade biológica!''DICA'4'4 alimentos que ajudam a diminuir a pressão arterial''DICA'5'Sopa de feijão''DICA'Array(6)0: {nome: 'Pudim de Chia com frutas vermelhas', tipo: 'DICA'}1: {nome: 'Cansaço constante: nem sempre é só falta de sono', tipo: 'DICA'}2: {nome: 'Dor muscular tardia é diferente de dor de lesão: saiba reconhecer!', tipo: 'DICA'}3: {nome: 'Pausas não são luxo: são uma necessidade biológica!', tipo: 'DICA'}4: {nome: '4 alimentos que ajudam a diminuir a pressão arterial', tipo: 'DICA'}5: {nome: 'Sopa de feijão', tipo: 'DICA'}length: 6[[Prototype]]: Array(0)
+(6) [{…}, {…}, {…}, {…}, {…}, {…}]
+// Exemplo: roda a função e joga o resultado direto no seu Ctrl+V
+copy(extrairItensPaginaAtual());
+VM1069:23 ✅ 6 itens encontrados na página atual:
+VM1069:24 (index)nometipo(index)nometipo0'Pudim de Chia com frutas vermelhas''DICA'1'Cansaço constante: nem sempre é só falta de sono''DICA'2'Dor muscular tardia é diferente de dor de lesão: saiba reconhecer!''DICA'3'Pausas não são luxo: são uma necessidade biológica!''DICA'4'4 alimentos que ajudam a diminuir a pressão arterial''DICA'5'Sopa de feijão''DICA'Array(6)
+undefined
