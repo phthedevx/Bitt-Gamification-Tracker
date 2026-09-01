@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import java.util.List;
 public interface ItemRepository extends JpaRepository<Item, Integer> {
-    @Query("SELECT i FROM Item i LEFT JOIN FETCH i.curtidas c ON c.anoMes = :anoMes WHERE i.tipo = :tipo ORDER BY i.id")
-    List<Item> findByTipoWithCurtidas(@Param("tipo") TipoItem tipo, @Param("anoMes") String anoMes);
+    @Query("SELECT i, (CASE WHEN c.id IS NOT NULL THEN true ELSE false END) FROM Item i LEFT JOIN CurtidaMensal c ON c.item = i AND c.anoMes = :anoMes AND c.curtido = true WHERE i.tipo = :tipo ORDER BY i.id")
+    List<Object[]> findItensComStatusCurtida(@Param("tipo") TipoItem tipo, @Param("anoMes") String anoMes);
     long countByTipo(TipoItem tipo);
 }
