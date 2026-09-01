@@ -4,6 +4,7 @@ import com.bitt.tracker.domain.entities.Item;
 import com.bitt.tracker.domain.enums.TipoItem;
 import com.bitt.tracker.dto.ItemRequestDTO;
 import com.bitt.tracker.dto.ItemResponseDTO;
+import com.bitt.tracker.dto.ProgressoMensalDTO;
 import com.bitt.tracker.repositories.CurtidaMensalRepository;
 import com.bitt.tracker.repositories.ItemRepository;
 import lombok.RequiredArgsConstructor;
@@ -17,9 +18,7 @@ public class ItemService {
     private final ItemRepository itemRepository;
     private final CurtidaMensalRepository curtidaMensalRepository;
     public void salvarLote(List<ItemRequestDTO> dtos) { dtos.forEach(this::salvar); }
-    public Item salvar(ItemRequestDTO dto) {
-        return itemRepository.save(Item.builder().nome(dto.nome()).tipo(dto.tipo()).ativo(true).dataCriacao(LocalDateTime.now()).build());
-    }
+    public Item salvar(ItemRequestDTO dto) { return itemRepository.save(Item.builder().nome(dto.nome()).tipo(dto.tipo()).ativo(true).dataCriacao(LocalDateTime.now()).build()); }
     public List<ItemResponseDTO> listarComStatus(TipoItem tipo, String anoMes) {
         return itemRepository.findByTipoWithCurtidas(tipo, anoMes).stream().map(i -> {
             boolean curtido = i.getCurtidas() != null && i.getCurtidas().stream().anyMatch(c -> c.getAnoMes().equals(anoMes) && Boolean.TRUE.equals(c.getCurtido()));
@@ -33,5 +32,10 @@ public class ItemService {
         curtida.setCurtido(!Boolean.TRUE.equals(curtida.getCurtido()));
         curtida.setDataAtualizacao(LocalDateTime.now());
         curtidaMensalRepository.save(curtida);
+    }
+    public ProgressoMensalDTO calcularProgressoMensal(String anoMes) {
+        long dicasCurtidas = curtidaMensalRepository.countByItemTipoAndAnoMesAndCurtidoTrue(TipoItem.DICA, anoMes);
+        long receitasCurtidas = curtidaMensalRepository.countByItemTipoAndAnoMesAndCurtidoTrue(TipoItem.RECEITA, anoMes);
+        return new ProgressoMensalDTO(anoMes, dicasCurtidas, receitasCurtidas, 25L, 25L);
     }
 }
