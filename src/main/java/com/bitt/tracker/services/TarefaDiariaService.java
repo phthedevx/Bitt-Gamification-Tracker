@@ -15,11 +15,8 @@ import java.util.List;
 public class TarefaDiariaService {
     private final TarefaDiariaRepository tarefaRepository;
     private final HistoricoTarefaDiariaRepository historicoRepository;
-    public List<TarefaDiariaDTO> listarComStatusDiario(LocalDate data) {
-        return tarefaRepository.findAll().stream().map(t -> {
-            boolean concluido = historicoRepository.findByTarefaAndDataRegistro(t, data).map(h -> Boolean.TRUE.equals(h.getConcluido())).orElse(false);
-            return new TarefaDiariaDTO(t.getId(), t.getNome(), t.getCategoria(), concluido);
-        }).toList();
+        public List<TarefaDiariaDTO> listarComStatusDiario(LocalDate data) {
+        return tarefaRepository.findTarefasComStatusNaData(data);
     }
     @Transactional
     public void toggleConclusao(Integer tarefaId, LocalDate data) {
