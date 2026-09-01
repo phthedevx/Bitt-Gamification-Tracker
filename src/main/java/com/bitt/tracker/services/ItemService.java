@@ -17,11 +17,15 @@ import java.util.List;
 public class ItemService {
     private final ItemRepository itemRepository;
     private final CurtidaMensalRepository curtidaMensalRepository;
-    public void salvarLote(List<ItemRequestDTO> dtos) { dtos.forEach(this::salvar); }
+        public void salvarLote(List<ItemRequestDTO> dtos) {
+        List<Item> itens = dtos.stream().map(dto -> Item.builder().nome(dto.nome()).tipo(dto.tipo()).ativo(true).dataCriacao(LocalDateTime.now()).build()).toList();
+        itemRepository.saveAll(itens);
+    }
     public Item salvar(ItemRequestDTO dto) { return itemRepository.save(Item.builder().nome(dto.nome()).tipo(dto.tipo()).ativo(true).dataCriacao(LocalDateTime.now()).build()); }
-    public List<ItemResponseDTO> listarComStatus(TipoItem tipo, String anoMes) {
-        return itemRepository.findByTipoWithCurtidas(tipo, anoMes).stream().map(i -> {
-            boolean curtido = i.getCurtidas() != null && i.getCurtidas().stream().anyMatch(c -> c.getAnoMes().equals(anoMes) && Boolean.TRUE.equals(c.getCurtido()));
+        public List<ItemResponseDTO> listarComStatus(TipoItem tipo, String anoMes) {
+        return itemRepository.findItensComStatusCurtida(tipo, anoMes).stream().map(obj -> {
+            Item i = (Item) obj[0];
+            boolean curtido = (Boolean) obj[1];
             return new ItemResponseDTO(i.getId(), i.getNome(), i.getTipo(), curtido);
         }).toList();
     }
