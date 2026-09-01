@@ -2,6 +2,8 @@ package com.bitt.tracker.domain.entities;
 import com.bitt.tracker.domain.enums.TipoItem;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import java.time.LocalDateTime;
 import java.util.List;
 @Entity
@@ -14,7 +16,11 @@ public class Item {
     @Enumerated(EnumType.STRING)
     private TipoItem tipo;
     private Boolean ativo;
+    @CreationTimestamp
+    @Column(updatable = false)
     private LocalDateTime dataCriacao;
+    @UpdateTimestamp
+    private LocalDateTime dataAtualizacao;
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<CurtidaMensal> curtidas;
 }

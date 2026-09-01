@@ -1,6 +1,8 @@
 package com.bitt.tracker.domain.entities;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 @Entity
@@ -13,5 +15,6 @@ public class HistoricoTarefaDiaria {
     private TarefaDiaria tarefa;
     private LocalDate dataRegistro;
     private Boolean concluido;
+    @UpdateTimestamp
     private LocalDateTime dataAtualizacao;
 }
