@@ -38,8 +38,20 @@ public class ItemService {
         curtidaMensalRepository.save(curtida);
     }
     public ProgressoMensalDTO calcularProgressoMensal(String anoMes) {
-        long dicasCurtidas = curtidaMensalRepository.countByItemTipoAndAnoMesAndCurtidoTrue(TipoItem.DICA, anoMes);
-        long receitasCurtidas = curtidaMensalRepository.countByItemTipoAndAnoMesAndCurtidoTrue(TipoItem.RECEITA, anoMes);
+        List<Object[]> resultados = curtidaMensalRepository.countCurtidasAgrupadasPorTipo(anoMes);
+        long dicasCurtidas = 0L;
+        long receitasCurtidas = 0L;
+
+        for (Object[] resultado : resultados) {
+            TipoItem tipo = (TipoItem) resultado[0];
+            long count = ((Number) resultado[1]).longValue();
+            if (tipo == TipoItem.DICA) {
+                dicasCurtidas = count;
+            } else if (tipo == TipoItem.RECEITA) {
+                receitasCurtidas = count;
+            }
+        }
+
         return new ProgressoMensalDTO(anoMes, dicasCurtidas, receitasCurtidas, 25L, 25L);
     }
 }

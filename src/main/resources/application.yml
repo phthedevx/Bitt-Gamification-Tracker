@@ -10,3 +10,7 @@ spring:
   flyway:
     enabled: true
     baseline-on-migrate: true
+
+logging:
+  level:
+    org.hibernate.orm.jdbc.bind: trace
