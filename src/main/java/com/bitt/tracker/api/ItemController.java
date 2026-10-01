@@ -23,9 +23,9 @@ public class ItemController {
     public ResponseEntity<List<ItemResponseDTO>> listar(@RequestParam TipoItem tipo, @RequestParam String anoMes) {
         return ResponseEntity.ok(itemService.listarComStatus(tipo, anoMes));
     }
-    @PostMapping("/{id}/toggle-curtida")
-    public ResponseEntity<Void> toggleCurtida(@PathVariable Integer id, @RequestBody @Valid CurtidaToggleDTO dto) {
-        itemService.toggleCurtida(id, dto.anoMes());
+    @PostMapping("/{id}/curtida")
+    public ResponseEntity<Void> curtir(@PathVariable Integer id, @RequestBody @Valid com.bitt.tracker.dto.CurtidaRequestDTO dto) {
+        itemService.curtir(id, dto.anoMes(), dto.data());
         return ResponseEntity.ok().build();
     }
 }
