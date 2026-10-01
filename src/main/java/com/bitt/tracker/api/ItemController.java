@@ -1,6 +1,5 @@
 package com.bitt.tracker.api;
 import com.bitt.tracker.domain.enums.TipoItem;
-import com.bitt.tracker.dto.CurtidaToggleDTO;
 import com.bitt.tracker.dto.ItemBatchImportDTO;
 import com.bitt.tracker.dto.ItemResponseDTO;
 import com.bitt.tracker.services.ItemService;
