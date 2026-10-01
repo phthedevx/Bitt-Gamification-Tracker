@@ -115,4 +115,38 @@ class ItemServiceTest {
         assertEquals(1, progresso.receitasCurtidas());
         assertEquals(25L, progresso.metaDicas());
     }
+
+    @Test
+    void testRegressaoBugCurtidaMensalEDiaria() {
+        // Cenario: Dica inicialmente nao curtida
+        String anoMes = "2026-10";
+        LocalDate data = LocalDate.of(2026, 10, 1);
+        
+        // Registrar curtida
+        itemService.curtir(dica1.getId(), anoMes, data);
+        
+        // 1. Mensal e Diaria concordam
+        var itens = itemService.listarComStatus(TipoItem.DICA, anoMes);
+        var dicaAtualizada = itens.stream().filter(i -> i.id().equals(dica1.getId())).findFirst().orElseThrow();
+        assertTrue(dicaAtualizada.curtido(), "A dica deve estar curtida no catalogo mensal");
+        
+        var progresso = itemService.calcularProgressoDiario(data);
+        assertEquals(1, progresso.dicasCurtidas(), "O progresso diario deve contabilizar a curtida");
+        
+        // 2. Teste do dia seguinte
+        LocalDate dataSeguinte = LocalDate.of(2026, 10, 2);
+        var itensDiaSeguinte = itemService.listarComStatus(TipoItem.DICA, anoMes);
+        var dicaDiaSeguinte = itensDiaSeguinte.stream().filter(i -> i.id().equals(dica1.getId())).findFirst().orElseThrow();
+        assertTrue(dicaDiaSeguinte.curtido(), "A dica deve continuar curtida no mes");
+        
+        var progressoSeguinte = itemService.calcularProgressoDiario(dataSeguinte);
+        assertEquals(0, progressoSeguinte.dicasCurtidas(), "O progresso do dia seguinte nao deve contabilizar");
+        
+        // 3. Teste da nova competencia
+        String anoMesNovo = "2026-11";
+        var itensMesNovo = itemService.listarComStatus(TipoItem.DICA, anoMesNovo);
+        var dicaMesNovo = itensMesNovo.stream().filter(i -> i.id().equals(dica1.getId())).findFirst().orElseThrow();
+        assertFalse(dicaMesNovo.curtido(), "Na nova competencia, a dica nao deve estar curtida");
+    }
 }
+
