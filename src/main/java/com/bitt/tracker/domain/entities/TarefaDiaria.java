@@ -15,6 +15,7 @@ public class TarefaDiaria {
     @Enumerated(EnumType.STRING)
     private CategoriaTarefa categoria;
     private Boolean ativo;
+    private Integer pontos;
     @CreationTimestamp
     @Column(updatable = false)
     private LocalDateTime dataCriacao;
