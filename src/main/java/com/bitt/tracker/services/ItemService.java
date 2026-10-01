@@ -30,12 +30,33 @@ public class ItemService {
         }).toList();
     }
     @Transactional
-    public void toggleCurtida(Integer itemId, String anoMes) {
+    public void curtir(Integer itemId, String anoMes, java.time.LocalDate data) {
+        String mesDaData = String.format("%d-%02d", data.getYear(), data.getMonthValue());
+        if (!mesDaData.equals(anoMes)) {
+            throw new com.bitt.tracker.api.RegraDeNegocioException("Data incompatível com a competência informada");
+        }
+        
         Item item = itemRepository.findById(itemId).orElseThrow(() -> new RecursoNaoEncontradoException("Item não encontrado"));
-        CurtidaMensal curtida = curtidaMensalRepository.findByItemAndAnoMes(item, anoMes).orElseGet(() -> CurtidaMensal.builder().item(item).anoMes(anoMes).curtido(false).build());
-        curtida.setCurtido(!Boolean.TRUE.equals(curtida.getCurtido()));
-        curtida.setDataAtualizacao(LocalDateTime.now());
-        curtidaMensalRepository.save(curtida);
+        CurtidaMensal curtida = curtidaMensalRepository.findByItemAndAnoMes(item, anoMes).orElse(null);
+        
+        if (curtida == null) {
+            curtida = CurtidaMensal.builder()
+                .item(item)
+                .anoMes(anoMes)
+                .curtido(true)
+                .dataCurtida(data)
+                .build();
+            curtidaMensalRepository.save(curtida);
+        } else {
+            if (!Boolean.TRUE.equals(curtida.getCurtido())) {
+                 curtida.setCurtido(true);
+                 if (curtida.getDataCurtida() == null) {
+                     curtida.setDataCurtida(data);
+                 }
+                 curtida.setDataAtualizacao(LocalDateTime.now());
+                 curtidaMensalRepository.save(curtida);
+            }
+        }
     }
     public ProgressoMensalDTO calcularProgressoMensal(String anoMes) {
         List<Object[]> resultados = curtidaMensalRepository.countCurtidasAgrupadasPorTipo(anoMes);
