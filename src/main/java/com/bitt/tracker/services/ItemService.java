@@ -4,7 +4,6 @@ import com.bitt.tracker.domain.entities.Item;
 import com.bitt.tracker.domain.enums.TipoItem;
 import com.bitt.tracker.dto.ItemRequestDTO;
 import com.bitt.tracker.dto.ItemResponseDTO;
-import com.bitt.tracker.dto.ProgressoMensalDTO;
 import com.bitt.tracker.repositories.CurtidaMensalRepository;
 import com.bitt.tracker.repositories.ItemRepository;
 import lombok.RequiredArgsConstructor;
@@ -58,8 +57,8 @@ public class ItemService {
             }
         }
     }
-    public ProgressoMensalDTO calcularProgressoMensal(String anoMes) {
-        List<Object[]> resultados = curtidaMensalRepository.countCurtidasAgrupadasPorTipo(anoMes);
+    public com.bitt.tracker.dto.ProgressoDiarioDTO calcularProgressoDiario(java.time.LocalDate data) {
+        List<Object[]> resultados = curtidaMensalRepository.countCurtidasAgrupadasPorTipoEData(data);
         long dicasCurtidas = 0L;
         long receitasCurtidas = 0L;
 
@@ -73,6 +72,6 @@ public class ItemService {
             }
         }
 
-        return new ProgressoMensalDTO(anoMes, dicasCurtidas, receitasCurtidas, 25L, 25L);
+        return new com.bitt.tracker.dto.ProgressoDiarioDTO(data, dicasCurtidas, receitasCurtidas, 25L, 25L);
     }
 }
